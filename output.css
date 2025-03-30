@@ -6,8 +6,13 @@
     'Noto Color Emoji';
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New',
     monospace;
-    --color-amber-700: oklch(0.555 0.163 48.998);
-    --color-amber-800: oklch(0.473 0.137 46.201);
+    --spacing: 0.25rem;
+    --text-lg: 1.125rem;
+    --text-lg--line-height: calc(1.75 / 1.125);
+    --font-weight-medium: 500;
+    --radius-xl: 0.75rem;
+    --radius-2xl: 1rem;
+    --radius-4xl: 2rem;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
   }
@@ -155,14 +160,72 @@
   }
 }
 @layer utilities {
+  .absolute {
+    position: absolute;
+  }
   .relative {
     position: relative;
+  }
+  .mx-4 {
+    margin-inline: calc(var(--spacing) * 4);
+  }
+  .my-4 {
+    margin-block: calc(var(--spacing) * 4);
+  }
+  .mt-4 {
+    margin-top: calc(var(--spacing) * 4);
+  }
+  .mb-2 {
+    margin-bottom: calc(var(--spacing) * 2);
+  }
+  .mb-4 {
+    margin-bottom: calc(var(--spacing) * 4);
   }
   .block {
     display: block;
   }
+  .flex {
+    display: flex;
+  }
   .table {
     display: table;
+  }
+  .size-10 {
+    width: calc(var(--spacing) * 10);
+    height: calc(var(--spacing) * 10);
+  }
+  .h-8 {
+    height: calc(var(--spacing) * 8);
+  }
+  .h-10 {
+    height: calc(var(--spacing) * 10);
+  }
+  .h-15 {
+    height: calc(var(--spacing) * 15);
+  }
+  .h-\[7vh\] {
+    height: 7vh;
+  }
+  .h-\[50vh\] {
+    height: 50vh;
+  }
+  .h-full {
+    height: 100%;
+  }
+  .w-8 {
+    width: calc(var(--spacing) * 8);
+  }
+  .w-\[80vw\] {
+    width: 80vw;
+  }
+  .w-\[95vw\] {
+    width: 95vw;
+  }
+  .w-full {
+    width: 100%;
+  }
+  .max-w-full {
+    max-width: 100%;
   }
   .border-collapse {
     border-collapse: collapse;
@@ -170,15 +233,140 @@
   .resize {
     resize: both;
   }
+  .flex-col {
+    flex-direction: column;
+  }
+  .content-end {
+    align-content: flex-end;
+  }
+  .items-center {
+    align-items: center;
+  }
+  .justify-around {
+    justify-content: space-around;
+  }
+  .justify-center {
+    justify-content: center;
+  }
+  .gap-1 {
+    gap: calc(var(--spacing) * 1);
+  }
+  .self-start {
+    align-self: flex-start;
+  }
+  .overflow-hidden {
+    overflow: hidden;
+  }
+  .rounded-2xl {
+    border-radius: var(--radius-2xl);
+  }
+  .rounded-4xl {
+    border-radius: var(--radius-4xl);
+  }
+  .rounded-full {
+    border-radius: calc(infinity * 1px);
+  }
+  .rounded-xl {
+    border-radius: var(--radius-xl);
+  }
+  .rounded-r-full {
+    border-top-right-radius: calc(infinity * 1px);
+    border-bottom-right-radius: calc(infinity * 1px);
+  }
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
-  .bg-amber-700 {
-    background-color: var(--color-amber-700);
+  .border-1 {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
   }
-  .bg-amber-800 {
-    background-color: var(--color-amber-800);
+  .border-4 {
+    border-style: var(--tw-border-style);
+    border-width: 4px;
+  }
+  .border-y-3 {
+    border-block-style: var(--tw-border-style);
+    border-block-width: 3px;
+  }
+  .border-r-2 {
+    border-right-style: var(--tw-border-style);
+    border-right-width: 2px;
+  }
+  .border-b-2 {
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 2px;
+  }
+  .border-b-3 {
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 3px;
+  }
+  .border-l-0 {
+    border-left-style: var(--tw-border-style);
+    border-left-width: 0px;
+  }
+  .border-\(--NeonBlanco\) {
+    border-color: var(--NeonBlanco);
+  }
+  .border-\(--NeonGrey\) {
+    border-color: var(--NeonGrey);
+  }
+  .border-y-\[var\(--NeonGrey\)\] {
+    border-block-color: var(--NeonGrey);
+  }
+  .border-r-\[var\(--NintendoRed\)\] {
+    border-right-color: var(--NintendoRed);
+  }
+  .border-b-\[var\(--NintendoRed\)\] {
+    border-bottom-color: var(--NintendoRed);
+  }
+  .bg-\(--NeonFondo\) {
+    background-color: var(--NeonFondo);
+  }
+  .bg-\(--RellenoTarjetas\) {
+    background-color: var(--RellenoTarjetas);
+  }
+  .bg-cover {
+    background-size: cover;
+  }
+  .bg-center {
+    background-position: center;
+  }
+  .object-cover {
+    object-fit: cover;
+  }
+  .p-4 {
+    padding: calc(var(--spacing) * 4);
+  }
+  .p-6 {
+    padding: calc(var(--spacing) * 6);
+  }
+  .px-3 {
+    padding-inline: calc(var(--spacing) * 3);
+  }
+  .px-4 {
+    padding-inline: calc(var(--spacing) * 4);
+  }
+  .px-20 {
+    padding-inline: calc(var(--spacing) * 20);
+  }
+  .py-2 {
+    padding-block: calc(var(--spacing) * 2);
+  }
+  .py-3 {
+    padding-block: calc(var(--spacing) * 3);
+  }
+  .ps-4 {
+    padding-inline-start: calc(var(--spacing) * 4);
+  }
+  .pe-6 {
+    padding-inline-end: calc(var(--spacing) * 6);
+  }
+  .pe-8 {
+    padding-inline-end: calc(var(--spacing) * 8);
+  }
+  .align-middle {
+    vertical-align: middle;
   }
   .underline {
     text-decoration-line: underline;
@@ -187,10 +375,97 @@
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
   }
+  .placeholder\:text-lg {
+    &::placeholder {
+      font-size: var(--text-lg);
+      line-height: var(--tw-leading, var(--text-lg--line-height));
+    }
+  }
+  .placeholder\:font-medium {
+    &::placeholder {
+      --tw-font-weight: var(--font-weight-medium);
+      font-weight: var(--font-weight-medium);
+    }
+  }
+  .placeholder\:text-\[var\(--NeonGrey\)\] {
+    &::placeholder {
+      color: var(--NeonGrey);
+    }
+  }
+  .hover\:text-\[var\(--NeonBlanco\)\] {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--NeonBlanco);
+      }
+    }
+  }
+  .sm\:order-last {
+    @media (width >= 40rem) {
+      order: 9999;
+    }
+  }
   .sm\:hidden {
     @media (width >= 40rem) {
       display: none;
     }
+  }
+  .md\:order-last {
+    @media (width >= 48rem) {
+      order: 9999;
+    }
+  }
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+  --NeonBlanco: #E7E9EA;
+  --NeonFondo: #181818;
+  --NeonGrey: #b3b4b3;
+  --NintendoRed: #FF182A;
+  --RellenoTarjetas: rgba(0,0,0,0.4);
+  --BordeNavegaciones: linear-gradient(90deg, rgba(231,233,234,1) 0%, rgba(231,233,234,0.5) 18%, rgba(0,0,0,0) 50%, rgba(231,233,234,0.5) 81%, rgba(231,233,234,1) 100%);
+  --TarjetasSombra: 46px 46px 40px 0px rgba(0, 0, 0, 0.25), 23px
+    23px 20px 0px rgba(0, 0, 0, 0.4);
+}
+@layer base {
+  html {
+    font-family: "Montserrat", sans-serif;
+  }
+  h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--NeonBlanco);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  }
+  p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--NeonBlanco);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  header {
+    a {
+      font-size: 1.1rem;
+      font-weight: 500;
+      color: var(--NeonGrey);
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+  }
+  h3 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--NeonBlanco);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  }
+  h4 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--NeonBlanco);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  }
+}
+@layer utilities {
+  .sombraTarjetas {
+    box-shadow: var(--TarjetasSombra);
   }
 }
 @property --tw-border-style {
@@ -202,4 +477,8 @@
   syntax: "*";
   inherits: false;
   initial-value: solid;
+}
+@property --tw-font-weight {
+  syntax: "*";
+  inherits: false;
 }
