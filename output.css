@@ -180,9 +180,6 @@
   .my-4 {
     margin-block: calc(var(--spacing) * 4);
   }
-  .my-5 {
-    margin-block: calc(var(--spacing) * 5);
-  }
   .mt-4 {
     margin-top: calc(var(--spacing) * 4);
   }
@@ -204,9 +201,6 @@
   .flex {
     display: flex;
   }
-  .table {
-    display: table;
-  }
   .size-10 {
     width: calc(var(--spacing) * 10);
     height: calc(var(--spacing) * 10);
@@ -223,17 +217,8 @@
   .h-\[7vh\] {
     height: 7vh;
   }
-  .h-\[20vh\] {
-    height: 20vh;
-  }
   .h-\[25vh\] {
     height: 25vh;
-  }
-  .h-\[30vh\] {
-    height: 30vh;
-  }
-  .h-\[30vw\] {
-    height: 30vw;
   }
   .h-\[50vh\] {
     height: 50vh;
@@ -244,20 +229,14 @@
   .w-8 {
     width: calc(var(--spacing) * 8);
   }
-  .w-\[10vh\] {
-    width: 10vh;
-  }
-  .w-\[10vw\] {
-    width: 10vw;
-  }
   .w-\[60vw\] {
     width: 60vw;
   }
+  .w-\[90vw\] {
+    width: 90vw;
+  }
   .w-\[95vw\] {
     width: 95vw;
-  }
-  .w-\[300vw\] {
-    width: 300vw;
   }
   .w-full {
     width: 100%;
@@ -279,15 +258,6 @@
   }
   .min-w-\[90vw\] {
     min-width: 90vw;
-  }
-  .border-collapse {
-    border-collapse: collapse;
-  }
-  .transform {
-    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
-  }
-  .resize {
-    resize: both;
   }
   .flex-col {
     flex-direction: column;
@@ -312,9 +282,6 @@
   }
   .gap-3 {
     gap: calc(var(--spacing) * 3);
-  }
-  .gap-5 {
-    gap: calc(var(--spacing) * 5);
   }
   .gap-6 {
     gap: calc(var(--spacing) * 6);
@@ -360,10 +327,6 @@
   .rounded-r-full {
     border-top-right-radius: calc(infinity * 1px);
     border-bottom-right-radius: calc(infinity * 1px);
-  }
-  .border {
-    border-style: var(--tw-border-style);
-    border-width: 1px;
   }
   .border-1 {
     border-style: var(--tw-border-style);
@@ -449,9 +412,6 @@
   .p-6 {
     padding: calc(var(--spacing) * 6);
   }
-  .p-20 {
-    padding: calc(var(--spacing) * 20);
-  }
   .px-3 {
     padding-inline: calc(var(--spacing) * 3);
   }
@@ -469,9 +429,6 @@
   }
   .py-3 {
     padding-block: calc(var(--spacing) * 3);
-  }
-  .py-5 {
-    padding-block: calc(var(--spacing) * 5);
   }
   .py-6 {
     padding-block: calc(var(--spacing) * 6);
@@ -506,21 +463,18 @@
   .align-middle {
     vertical-align: middle;
   }
+  .font-medium {
+    --tw-font-weight: var(--font-weight-medium);
+    font-weight: var(--font-weight-medium);
+  }
   .whitespace-normal {
     white-space: normal;
   }
   .whitespace-nowrap {
     white-space: nowrap;
   }
-  .underline {
-    text-decoration-line: underline;
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
-  }
-  .filter {
-    filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+  .text-\[var\(--NeonGrey\)\] {
+    color: var(--NeonGrey);
   }
   .placeholder\:text-lg {
     &::placeholder {
@@ -620,81 +574,39 @@
   .sombraTarjetas {
     box-shadow: var(--TarjetasSombra);
   }
-}
-@property --tw-rotate-x {
-  syntax: "*";
-  inherits: false;
-  initial-value: rotateX(0);
-}
-@property --tw-rotate-y {
-  syntax: "*";
-  inherits: false;
-  initial-value: rotateY(0);
-}
-@property --tw-rotate-z {
-  syntax: "*";
-  inherits: false;
-  initial-value: rotateZ(0);
-}
-@property --tw-skew-x {
-  syntax: "*";
-  inherits: false;
-  initial-value: skewX(0);
-}
-@property --tw-skew-y {
-  syntax: "*";
-  inherits: false;
-  initial-value: skewY(0);
+  .quitarScrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .quitarScrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbarNeonNews::-webkit-scrollbar {
+    height: 10px;
+  }
+  .scrollbarNeonNews::-webkit-scrollbar-track {
+    background: #00000000;
+    border-radius: 0px;
+  }
+  .scrollbarNeonNews::-webkit-scrollbar-thumb {
+    background: var(--NeonGrey);
+    border-radius: 10px;
+    padding-bottom: 5px;
+  }
+  .scrollbarNeonNews::-webkit-scrollbar-button {
+    display: none;
+  }
+  .scrollbarNeonNews {
+    scrollbar-width: thin;
+    scrollbar-color: var(--NeonGrey) #00000000;
+    scrollbar-arrow-color: transparent;
+    scroll-padding: 5px;
+  }
 }
 @property --tw-border-style {
   syntax: "*";
   inherits: false;
   initial-value: solid;
-}
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
-@property --tw-blur {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-brightness {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-contrast {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-grayscale {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-hue-rotate {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-invert {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-opacity {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-saturate {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-sepia {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-drop-shadow {
-  syntax: "*";
-  inherits: false;
 }
 @property --tw-font-weight {
   syntax: "*";

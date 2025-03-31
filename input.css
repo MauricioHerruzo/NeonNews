@@ -80,4 +80,41 @@
      .sombraTarjetas {
         box-shadow: var(--TarjetasSombra);
      }
+
+     /* //quitar scrollbar fea de navegador en los divs con overflow  */
+     .quitarScrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;    
+      }
+      .quitarScrollbar::-webkit-scrollbar {
+        display: none; 
+      }
+    
+    /* //mi scrollbar  */
+    /*Chromium Safari */
+  .scrollbarNeonNews::-webkit-scrollbar {
+    height: 10px; /* Altura del scrollbar horizontal */
+  }
+  /* //fondo  */
+  .scrollbarNeonNews::-webkit-scrollbar-track {
+    background: #00000000; /* Color de fondo */
+    border-radius: 0px;
+  }
+  /* barra  */
+  .scrollbarNeonNews::-webkit-scrollbar-thumb {
+    background: var(--NeonGrey); /* Color del thumb */
+    border-radius: 10px;
+    padding-bottom: 5px;
+  }
+  /* quitar flechas  */
+  .scrollbarNeonNews::-webkit-scrollbar-button{
+    display: none;
+  }
+  /*Firefox */
+  .scrollbarNeonNews {
+    scrollbar-width: thin;
+    scrollbar-color: var(--NeonGrey) #00000000;
+    scrollbar-arrow-color: transparent;
+    scroll-padding: 5px;
+  }
 }
