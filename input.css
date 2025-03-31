@@ -1,6 +1,7 @@
 @import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* Sin react o node.js las variables hay que guardarlas en un :root de css clásico para que funcionen  */
 :root{
     --NeonBlanco: #E7E9EA;
     --NeonFondo: #181818;
@@ -28,7 +29,7 @@
         color: var(--NeonBlanco);
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
     }
-    p{
+    button,p{
         font-size: 1rem;
         font-weight: 500;
         color: var(--NeonBlanco);
@@ -41,6 +42,19 @@
             color: var(--NeonGrey);
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
         }
+    }
+    footer{
+        a{
+            font-size: 1rem;
+            font-weight: 300;
+            color: var(--NeonBlanco);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+    }
+    small{
+        font-size: .6rem;
+        font-weight: 200;
+        color: var(--NeonBlanco);
     }
     h3{
         font-size: 1.8rem;
