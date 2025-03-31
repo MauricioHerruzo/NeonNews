@@ -96,7 +96,7 @@
         <section id="destacados" class =" relative flex flex-col  w-full items-center ">
             <h3 class=" self-start border-r-3 border-b-3 border-l-0 border-b-(--NeonGrey) border-r-(--NeonGrey) block  ps-4 pe-8 py-2 rounded-r-full sombraTarjetas bg-(--RellenoTarjetas) mb-10 sm:text-5xl sm:p-6">Más destacado</h3>  
             <!-- bloque destacados y navegacion  -->
-            <div class="flex flex-col sm:flex-row sm:w-[90vw] gap-10 sm:my-20">
+            <div class="flex flex-col sm:flex-row sm:w-[90vw] gap-10 sm:my-20 justify-center">
             <!-- Carrousel destacados  -->
             <div class=" carruselDestacados flex-col bg-(--RellenoTarjetas) sombraTarjetas p-6 w-[95vw] sm:w-auto rounded-4xl border-b-2 border-r-2 border-b-[var(--NintendoRed)] border-r-[var(--NintendoRed)] z-10 sm:flex sm:flex.col sm:justify-center sm:p-10 ">
                 <img src="img/Nintendo.jpg" alt="Switch 2" class="max-w-full rounded-2xl mb-2">
@@ -118,12 +118,12 @@
                 </div>  
             </div>
         <!-- Navegacion carrouseles categorias destacadas -->
-        <div class=" relative flex bg-(--RellenoTarjetas) rounded-full px-3 py-3 justify-around w-[95vw] sombraTarjetas  z-[999] sm:w-auto sm:flex-col ">
-            <div class="categoriaVideojuego"><img src="img/Switch.svg" alt="Switch" class="h-10 sm:h-20"></div>
-            <div class="categoriaVideojuego"><img src="img/Vector.svg" alt="Overwatch"class="h-10 sm:h-20"></div>
-            <div class="categoriaVideojuego"><img src="img/Capa 14.svg" alt="La compu"class="h-10 sm:h-20"></div>
-            <div class="categoriaVideojuego"><img src="img/Play.svg" alt="Plastation"class="h-10 sm:h-20"></div>
-            <div class="categoriaVideojuego"><img src="img/LoL.svg" alt="LoLxd"class="h-10 sm:h-20"></div>
+        <div class=" flex bg-(--RellenoTarjetas) rounded-full px-3 py-3 justify-around w-[95vw] sombraTarjetas  sm:w-auto sm:flex-col ">
+            <div class="categoriaVideojuego flex justify-center"><img src="img/Switch.svg" alt="Switch" class="h-10 sm:h-20"></div>
+            <div class="categoriaVideojuego flex justify-center"><img src="img/Vector.svg" alt="Overwatch"class="h-10 sm:h-20"></div>
+            <div class="categoriaVideojuego flex justify-center"><img src="img/Capa 14.svg" alt="La compu"class="h-10 sm:h-20"></div>
+            <div class="categoriaVideojuego flex justify-center"><img src="img/Play.svg" alt="Plastation"class="h-10 sm:h-20"></div>
+            <div class="categoriaVideojuego flex justify-center"><img src="img/LoL.svg" alt="LoLxd"class="h-10 sm:h-20"></div>
          </div>
         </div>
         </section>
@@ -137,28 +137,34 @@
             <!-- info perfil -->
              <div class="info flex items-center self-start gap-3 ">
                 <div class="videojuego flex items-center ">
-                    <p class="sm:text-2xl">Balatro Balatrez</p>
+                    <p class="sm:text-2xl">Toniki RAW</p>
                     <img src="img/Vector.svg" alt="iconoVideojuego" class="size-10 sm:size-20">
                 </div>
                 <!-- icono usuario  -->
                 <div class="order-first relative rounded-full border-1 border-(--NeonBlanco) w-8 h-8 overflow-hidden sm:size-20">
-                    <img src="img/usuario.webp" alt="usuarioIMG" class="absolute w-full h-full object-cover">
+                    <img src="img/channels4_profile.jpg" alt="usuarioIMG" class="absolute w-full h-full object-cover">
                 </div>
              </div> 
              <!-- posts del perfil laterales  -->
              <div class="flex overflow-x-auto whitespace-nowrap gap-3 min-w-[90vw] quitarScrollbar scrollbarNeonNews">
                 <!-- post1 -->
                 <div class="flex flex-col my-3 w-[60vw] min-w-[60vw] ">
-                    <img src="img/Nintendo.jpg" alt="Nitendo 2" class="max-w-full rounded-xl">
-                    <p class=" whitespace-normal sm:text-2xl">Mel Medarda estará bloqueada en competitivo</p>
+                    <div class="  rounded-2xl overflow-hidden">
+                        <img src="img/the-witcher-4-ciri-recast-1024x536.webp" alt="Nitendo 2" class="max-w-full max-h-full object-cover">
+                    </div>
+                    <p class=" whitespace-normal sm:text-2xl">Trailer de The Witcher 4 analidado al detalle</p>
                 </div>
-                <div class="flex flex-col my-3 w-[60vw] min-w-[60vw]">
-                    <img src="img/Nintendo.jpg" alt="Nitendo 2" class="max-w-full rounded-xl">
-                    <p class="whitespace-normal sm:text-2xl">Mel Medarda estará bloqueada en competitivo</p>
+                <div class="flex flex-col my-3 w-[60vw] min-w-[60vw] ">
+                    <div class="  rounded-2xl overflow-hidden">
+                        <img src="img/the-witcher-4-ciri-recast-1024x536.webp" alt="Nitendo 2" class="max-w-full max-h-full object-cover">
+                    </div>
+                    <p class=" whitespace-normal sm:text-2xl">Trailer de The Witcher 4 analidado al detalle</p>
                 </div>
-                <div class="flex flex-col my-3 w-[60vw] min-w-[60vw]">
-                    <img src="img/Nintendo.jpg" alt="Nitendo 2" class="max-w-full rounded-xl">
-                    <p class="whitespace-normal sm:text-2xl">Mel Medarda estará bloqueada en competitivo</p>
+                <div class="flex flex-col my-3 w-[60vw] min-w-[60vw] ">
+                    <div class="  rounded-2xl overflow-hidden">
+                        <img src="img/the-witcher-4-ciri-recast-1024x536.webp" alt="Nitendo 2" class="max-w-full max-h-full object-cover">
+                    </div>
+                    <p class=" whitespace-normal sm:text-2xl">Trailer de The Witcher 4 analidado al detalle</p>
                 </div>
              </div>
             </div> 
@@ -179,16 +185,22 @@
                  <div class="flex overflow-x-auto whitespace-nowrap gap-3 min-w-[90vw] quitarScrollbar scrollbarNeonNews">
                     <!-- post1 -->
                     <div class="flex flex-col my-3 w-[60vw] min-w-[60vw] ">
-                        <img src="img/Nintendo.jpg" alt="Nitendo 2" class="max-w-full rounded-xl">
-                        <p class=" whitespace-normal sm:text-2xl">Mel Medarda estará bloqueada en competitivo</p>
+                        <div class="  rounded-2xl overflow-hidden">
+                            <img src="img/1LBlAihd7GU-HD.jpg" alt="Nitendo 2" class="max-w-full max-h-full object-cover">
+                        </div>
+                        <p class=" whitespace-normal sm:text-2xl">Mid season, buffos, nerfeos, cambios y la muerte de Tracer</p>
                     </div>
-                    <div class="flex flex-col my-3 w-[60vw] min-w-[60vw]">
-                        <img src="img/Nintendo.jpg" alt="Nitendo 2" class="max-w-full rounded-xl">
-                        <p class="whitespace-normal sm:text-2xl">Mel Medarda estará bloqueada en competitivo</p>
+                    <div class="flex flex-col my-3 w-[60vw] min-w-[60vw] ">
+                        <div class="  rounded-2xl overflow-hidden">
+                            <img src="img/1LBlAihd7GU-HD.jpg" alt="Nitendo 2" class="max-w-full max-h-full object-cover">
+                        </div>
+                        <p class=" whitespace-normal sm:text-2xl">Mid season, buffos, nerfeos, cambios y la muerte de Tracer</p>
                     </div>
-                    <div class="flex flex-col my-3 w-[60vw] min-w-[60vw]">
-                        <img src="img/Nintendo.jpg" alt="Nitendo 2" class="max-w-full rounded-xl">
-                        <p class="whitespace-normal sm:text-2xl">Mel Medarda estará bloqueada en competitivo</p>
+                    <div class="flex flex-col my-3 w-[60vw] min-w-[60vw] ">
+                        <div class="  rounded-2xl overflow-hidden">
+                            <img src="img/1LBlAihd7GU-HD.jpg" alt="Nitendo 2" class="max-w-full max-h-full object-cover">
+                        </div>
+                        <p class=" whitespace-normal sm:text-2xl">Mid season, buffos, nerfeos, cambios y la muerte de Tracer</p>
                     </div>
                  </div>
                 </div>  
@@ -209,17 +221,23 @@
                  <div class="flex overflow-x-auto whitespace-nowrap gap-3 min-w-[90vw] quitarScrollbar scrollbarNeonNews">
                     <!-- post1 -->
                     <div class="flex flex-col my-3 w-[60vw] min-w-[60vw] ">
-                        <img src="img/Nintendo.jpg" alt="Nitendo 2" class="max-w-full rounded-xl">
-                        <p class=" whitespace-normal sm:text-2xl">Mel Medarda estará bloqueada en competitivo</p>
+                        <div class="  rounded-2xl overflow-hidden">
+                            <img src="img/gnad3G9QA04-HD.jpg" alt="Nitendo 2" class="max-w-full max-h-full object-cover">
+                        </div>
+                        <p class=" whitespace-normal sm:text-2xl">Mid season, buffos, nerfeos, cambios y la muerte de Tracer</p>
                     </div>
-                    <div class="flex flex-col my-3 w-[60vw] min-w-[60vw]">
-                        <img src="img/Nintendo.jpg" alt="Nitendo 2" class="max-w-full rounded-xl">
-                        <p class="whitespace-normal sm:text-2xl">Mel Medarda estará bloqueada en competitivo</p>
+                    <div class="flex flex-col my-3 w-[60vw] min-w-[60vw] ">
+                        <div class="  rounded-2xl overflow-hidden">
+                            <img src="img/gnad3G9QA04-HD.jpg" alt="Nitendo 2" class="max-w-full max-h-full object-cover">
+                        </div>
+                        <p class=" whitespace-normal sm:text-2xl">Mid season, buffos, nerfeos, cambios y la muerte de Tracer</p>
                     </div>
-                    <div class="flex flex-col my-3 w-[60vw] min-w-[60vw]">
-                        <img src="img/Nintendo.jpg" alt="Nitendo 2" class="max-w-full rounded-xl">
-                        <p class="whitespace-normal sm:text-2xl">Mel Medarda estará bloqueada en competitivo</p>
+                    <div class="flex flex-col my-3 w-[60vw] min-w-[60vw] ">
+                    <div class="  rounded-2xl overflow-hidden">
+                        <img src="img/gnad3G9QA04-HD.jpg" alt="Nitendo 2" class="max-w-full max-h-full object-cover">
                     </div>
+                    <p class=" whitespace-normal sm:text-2xl">Mid season, buffos, nerfeos, cambios y la muerte de Tracer</p>
+                </div>
                  </div>
                 </div> 
          </section>
